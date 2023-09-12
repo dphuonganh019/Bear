@@ -10,6 +10,11 @@ public class TV {
         this.volumeLevel = volumeLevel;
         this.on = on;
     }
+
+    public TV() {
+
+    }
+
     public void turnOn(){
         on = true;
     }
@@ -34,5 +39,14 @@ public class TV {
     }
     public void volumeDown(){
         volumeLevel--;
+    }
+
+    @Override
+    public String toString() {
+        return "TV{" +
+                "channel=" + channel +
+                ", volumeLevel=" + volumeLevel +
+                ", on=" + on +
+                '}';
     }
 }
